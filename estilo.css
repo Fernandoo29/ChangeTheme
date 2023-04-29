@@ -1,0 +1,24 @@
+#theme-btn-container{
+    position: relative;
+    width: 350px;
+    height: 150px;
+    border-radius: 100px;
+    box-shadow: inset 0px 0px 40px -8px black;
+    background: #c6c6c6;
+}
+
+#floting-btn{
+    position: absolute;
+    top: 10%;
+    left: 4%;
+    width: 34%;
+    height: 80%;
+    background: white;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.float-right{
+    transform: translateX(200px);
+}
