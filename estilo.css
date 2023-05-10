@@ -2,9 +2,23 @@
     position: relative;
     width: 350px;
     height: 150px;
+}
+
+#background{
+    width: 100%;
+    height: 100%;
     border-radius: 100px;
     box-shadow: inset 0px 0px 40px -8px black;
     background: #c6c6c6;
+}
+
+.sun-moon-default-position{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 1s;
 }
 
 #floting-btn{
@@ -13,12 +27,40 @@
     left: 4%;
     width: 34%;
     height: 80%;
-    background: white;
-    border-radius: 100px;
-    cursor: pointer;
     transition: 1s;
+    overflow: hidden;
+    border-radius: 100px;
+}
+
+#moon{
+    background: gray;
+    left: 0%;
+}
+
+#sun{
+    background: yellow;
+    left: 0%;
+}
+
+.call-moon{
+    z-index: 2;
+}
+
+.repositionSun{
+    transition: 0s;
+    left: -100% !important;
+}
+
+.repositionMoon{
+    transition: 0s;
+    left: 100% !important;
+}
+
+.cancelAnim{
+    transition: 1s;
+    z-index: 2;
 }
 
 .float-right{
-    transform: translateX(200px);
+    transform: translateX(170%);
 }
